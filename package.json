@@ -1,0 +1,67 @@
+{
+  "name": "ngx-rive-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Nx monorepo for ngx-rive — Angular 20 bindings for Rive.",
+  "license": "MIT",
+  "author": {
+    "name": "John Rusakov",
+    "email": "john.rusakov@gmail.com"
+  },
+  "homepage": "https://github.com/eurusik/ngx-rive#readme",
+  "bugs": {
+    "url": "https://github.com/eurusik/ngx-rive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eurusik/ngx-rive.git"
+  },
+  "engines": {
+    "node": ">=20.19",
+    "npm": ">=10"
+  },
+  "packageManager": "npm@10.0.0",
+  "scripts": {
+    "build:lib": "nx build ngx-rive",
+    "test": "nx run-many --target=test --all",
+    "test:lib": "nx test ngx-rive",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "serve": "nx serve playground"
+  },
+  "dependencies": {
+    "@angular/animations": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
+    "@angular/platform-server": "^20.3.19",
+    "@angular/router": "^20.0.0",
+    "@angular/ssr": "^20.3.24",
+    "@rive-app/canvas": "^2.37.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.0.0",
+    "@angular/cli": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
+    "@nx/angular": "^20.0.0",
+    "@nx/jest": "^20.0.0",
+    "@nx/js": "^20.0.0",
+    "@nx/workspace": "^20.0.0",
+    "@playwright/test": "^1.59.1",
+    "@schematics/angular": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-preset-angular": "^14.0.0",
+    "ng-packagr": "^20.0.0",
+    "nx": "^20.0.0",
+    "typescript": "~5.8.0"
+  }
+}

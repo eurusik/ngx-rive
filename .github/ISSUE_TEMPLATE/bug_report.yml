@@ -1,0 +1,61 @@
+name: Bug report
+description: Report something that ngx-rive did wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug! Please fill in as much as you can.
+
+  - type: input
+    id: version
+    attributes:
+      label: ngx-rive version
+      placeholder: 0.1.0-alpha.1
+    validations:
+      required: true
+
+  - type: input
+    id: angular-version
+    attributes:
+      label: Angular version
+      placeholder: 20.3.19
+    validations:
+      required: true
+
+  - type: input
+    id: rive-runtime-version
+    attributes:
+      label: '@rive-app/canvas version'
+      placeholder: 2.37.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include console errors, stack traces, and screenshots if you have them.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Link to a StackBlitz / a git branch / paste the minimal component code.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browsers affected
+      multiple: true
+      options:
+        - Chromium / Chrome / Edge
+        - Firefox
+        - Safari / WebKit
+        - SSR / Node
+        - Not sure
+    validations:
+      required: true

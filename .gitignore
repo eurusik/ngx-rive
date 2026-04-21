@@ -1,0 +1,26 @@
+node_modules
+dist
+tmp
+.nx/cache
+.nx/workspace-data
+.angular
+coverage
+*.log
+.DS_Store
+
+# Upstream rive-react reference — kept locally, not published
+rive-react-main
+
+# Playwright artifacts
+test-results
+playwright-report
+playwright/.cache
+.playwright-mcp
+
+# Ad-hoc screenshots at workspace root
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.webm
+/*.mp4
