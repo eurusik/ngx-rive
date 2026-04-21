@@ -1,6 +1,6 @@
 # ngx-rive
 
-Angular 20 bindings for [Rive](https://rive.app) — drop a `.riv` file into your app and interact with its view-model properties through native signals, while the library handles WASM lifecycle, DPR-aware resizing, and off-screen pause.
+Angular bindings for [Rive](https://rive.app) — drop a `.riv` file into your app and interact with its view-model properties through native signals, while the library handles WASM lifecycle, DPR-aware resizing, and off-screen pause.
 
 ## Compatibility
 
