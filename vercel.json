@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "cd ../.. && NX_NO_CLOUD=true NX_DAEMON=false npx nx build playground --skip-nx-cache && rm -rf apps/playground/_site && cp -r dist/apps/playground/browser apps/playground/_site",
+  "ignoreCommand": "cd ../.. && git diff --quiet HEAD^ HEAD -- apps/playground/ packages/ngx-rive/src/ package.json package-lock.json nx.json tsconfig.base.json vercel.json",
   "outputDirectory": "_site",
   "framework": null,
   "rewrites": [
