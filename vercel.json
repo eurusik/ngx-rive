@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npx nx build playground",
-  "outputDirectory": "dist/apps/playground/browser",
+  "buildCommand": "npx nx build playground && rm -rf _site && cp -r dist/apps/playground/browser _site",
+  "outputDirectory": "_site",
   "framework": null,
   "rewrites": [
     { "source": "/:path*", "destination": "/index.html" }
