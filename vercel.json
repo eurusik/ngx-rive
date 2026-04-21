@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd ../.. && NX_NO_CLOUD=true NX_DAEMON=false npx nx build playground --skip-nx-cache && rm -rf apps/playground/_site && cp -r dist/apps/playground/browser apps/playground/_site",
+  "buildCommand": "echo '=== pwd ===' && pwd && echo '=== ls -la ===' && ls -la && echo '=== find nx.json ===' && find / -name 'nx.json' -not -path '*/node_modules/*' 2>/dev/null | head -5 && echo '=== END DIAG ===' && exit 1",
   "outputDirectory": "_site",
   "framework": null,
   "rewrites": [
