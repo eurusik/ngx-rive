@@ -1,6 +1,6 @@
 {
   "name": "ngx-rive",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Angular bindings for Rive — signal-based directive, wrapper component, and data-binding factories built on @rive-app/canvas.",
   "keywords": [
     "angular",
