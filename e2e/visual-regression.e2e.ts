@@ -10,6 +10,11 @@ import { waitForRiveCanvas } from './helpers';
 const LOOSE = { maxDiffPixelRatio: 0.6, animations: 'disabled' as const };
 
 test.describe('Visual regression (catches blank/crashed canvas)', () => {
+  // Screenshot baselines are platform-specific (Windows vs Linux render canvas
+  // differently). We capture them on the maintainer's local machine for now
+  // and skip the compare job in CI. Cross-platform baselines are a v1 task.
+  test.skip(!!process.env['CI'], 'Platform-specific baselines; runs locally only');
+
   test('simple route renders a non-blank canvas', async ({ page }, testInfo) => {
     await page.goto('/simple');
     const canvas = await waitForRiveCanvas(page);
