@@ -7,6 +7,17 @@ once it reaches 1.0.
 
 ## [Unreleased]
 
+## [0.1.0-alpha.3] — 2026-04-21
+
+### Changed
+
+- Widen `@angular/core` and `@angular/common` peer ranges to
+  `^19.0.0 || ^20.0.0`. The library uses only APIs stable in both versions
+  (`input()`, `output()`, `viewChild`, `effect()` with `onCleanup`, `signal()`,
+  `computed()`, `DestroyRef`, `@if`/`@for`), so consumers on Angular 19 can
+  install without `--legacy-peer-deps`. Angular 20 remains the primary CI
+  target.
+
 ## [0.1.0-alpha.2] — 2026-04-21
 
 ### Packaging
@@ -51,6 +62,7 @@ below but the API may still change before `1.0`.
   recovery, scroll intersection, and full binding pipelines against real Rive
   WASM.
 
-[Unreleased]: https://github.com/eurusik/ngx-rive/compare/v0.1.0-alpha.2...HEAD
+[Unreleased]: https://github.com/eurusik/ngx-rive/compare/v0.1.0-alpha.3...HEAD
+[0.1.0-alpha.3]: https://github.com/eurusik/ngx-rive/releases/tag/v0.1.0-alpha.3
 [0.1.0-alpha.2]: https://github.com/eurusik/ngx-rive/releases/tag/v0.1.0-alpha.2
 [0.1.0-alpha.1]: https://github.com/eurusik/ngx-rive/releases/tag/v0.1.0-alpha.1

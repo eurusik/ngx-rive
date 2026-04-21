@@ -4,13 +4,13 @@ Angular 20 bindings for [Rive](https://rive.app) — drop a `.riv` file into you
 
 ## Compatibility
 
-| Package            | Version |
-| ------------------ | ------- |
-| `@angular/core`    | `^20.0` |
-| `@angular/common`  | `^20.0` |
-| `@rive-app/canvas` | `^2.37` |
+| Package            | Version            |
+| ------------------ | ------------------ |
+| `@angular/core`    | `^19.0 \|\| ^20.0` |
+| `@angular/common`  | `^19.0 \|\| ^20.0` |
+| `@rive-app/canvas` | `^2.37`            |
 
-All three are `peerDependencies`. The library is standalone-only — no `NgModule`. SSR works with `@angular/ssr` — see the [SSR section](#ssr) for details. Only the default Rive runtime (`@rive-app/canvas`) is supported; `@rive-app/webgl2` and `@rive-app/canvas-lite` are not.
+All three are `peerDependencies`. The library is standalone-only — no `NgModule`. Primary test matrix is Angular 20 + `@angular/ssr`; Angular 19 is supported on a best-effort basis — code uses only APIs stable in both versions. Only the default Rive runtime (`@rive-app/canvas`) is supported; `@rive-app/webgl2` and `@rive-app/canvas-lite` are not. See the [SSR section](#ssr) for hydration details.
 
 ## Install
 
