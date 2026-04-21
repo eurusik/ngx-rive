@@ -11,6 +11,9 @@ coverage
 # Upstream rive-react reference — kept locally, not published
 rive-react-main
 
+# Vercel CLI link
+.vercel
+
 # Playwright artifacts
 test-results
 playwright-report
