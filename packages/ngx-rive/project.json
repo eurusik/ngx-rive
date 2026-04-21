@@ -22,7 +22,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/ngx-rive"],
       "options": {
-        "jestConfig": "packages/ngx-rive/jest.config.ts"
+        "jestConfig": "packages/ngx-rive/jest.config.js"
       }
     }
   }
